@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Documentation server</title>
+	<meta charset= "UTF-8">
+	<meta name="author" content="Aron Heijstek and Yann Regev">
+	<link rel="stylesheet" href="documentation.css">
+</head>
+<body>
+	<nav>
+		<ul id="navBar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#phones">Phone list</a></li>
+			<li><a href="#add">New phone</a></li>
+			<li><a href="#delete">Delete phone</a></li>
+			<li><a href="#update">Update phone</a></li>
+			<li><a href="#retrieve">Specific phone info</a></li>
+			<li><a href="#reset">Reset</a></li>
+		</ul>
+	</nav>
+	
+<section id="home">	
+	<h1>Documentation server</h1>
+	<p>This is the documentation for the web server. The web server is able to take multiple types of requests
+and can respond in a correct way.</p>
+
+</section>
+<section id="phones">
+	<h2>Get phone list</h2>
+	<p>Get the entire phone list stored in the data base</p>
+	
+	<h3>HTTP request format:</h3>
+	<p>GET</p>
+	
+	<h3>Endpoint:</h2>
+	<p><code class="code">"GET http://localhost:8080/phones"</code></p>
+	
+	<h3>Response format:</h2>
+	<p>On success the HTTP status code in the response header is 200 OK, which
+translates to "success". On error, the header status code is a 500 SERVER ERROR code.	</p>
+	
+	<h3>Example response:</h2>
+	<div class="code"><p><code><pre>
+[
+    {
+        "brand": "Apple",
+        "screensize": 5,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/440px-IPhone_X_vector.svg.png",
+        "model": "iPhone X",
+        "os": "IOS",
+        "id": 1
+    },
+	{
+        "brand": "Samsung",
+        "screensize": 6,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Galaxy-s8-plus_gallery_front_black_s4.png",
+        "model": "Galaxy s8",
+        "os": "Android",
+        "id": 2
+    },
+    {
+        "brand": "Quantuum",
+        "screensize": 15,
+        "image": "http://pocketnow.com/wp-content/uploads/2012/08/at330a.jpg",
+        "model": "Quantuum XL",
+        "os": "Quantuum OS",
+        "id": 3
+    }
+]
+</pre></code></p></div>
+
+	<h3>Phone list object</h2>
+	<table>
+		<caption>List of objects</caption>
+		<tr>
+			<th>Key</th>
+			<th>Value Type</th>
+			<th>Value Description</th>
+		</tr>
+		<tr>
+			<td>brand</td>
+			<td>string</td>
+			<td>The brand of the phone</td>
+		</tr>
+		<tr>
+			<td>screensize</td>
+			<td>integer</td>
+			<td>The size of the screen in inches</td>
+		</tr>
+		<tr>
+			<td>image</td>
+			<td>URL</td>
+			<td>A URL containing an image of the phone</td>
+		</tr>
+		<tr>
+			<td>model</td>
+			<td>string</td>
+			<td>The model of the phone</td>
+		</tr>
+		<tr>
+			<td>os</td>
+			<td>string</td>
+			<td>The operating system of the phone</td>
+		</tr>
+		<tr>
+			<td>id</td>
+			<td>integer</td>
+			<td>The unique id of a specific phone</td>
+		</tr>
+	</table>
+</section>
+
+
+<section id="add">
+	<h2>Post to phone list</h2>
+	<p>Post a new phone to the server's database</p>
+	
+	<h3>HTTP request format:</h3>
+	<p>POST</p>
+	
+	<h3>Endpoint:</h2>
+	<p><code class="code">"POST http://localhost:8080/phones"</code></p>
+	
+	<h3>Response format:</h2>
+	<p>On success the HTTP status code in the response header is 200 OK, which
+translates to "success". On error, the header status code can either be 400 or 500.
+A code of 400 means that the client did not upload correct information. A code of 500
+means something went wrong in the server.	</p>
+	
+	<h3>Request parameters:</h2>
+	<table>
+		<caption>List of objects</caption>
+		<tr>
+			<th>Key</th>
+			<th>Value Type</th>
+			<th>Value Description</th>
+		</tr>
+		<tr>
+			<td>brand</td>
+			<td>string</td>
+			<td>The brand of the phone</td>
+		</tr>
+		<tr>
+			<td>screensize</td>
+			<td>integer</td>
+			<td>The size of the screen in inches</td>
+		</tr>
+		<tr>
+			<td>image</td>
+			<td>URL</td>
+			<td>A URL containing an image of the phone</td>
+		</tr>
+		<tr>
+			<td>model</td>
+			<td>string</td>
+			<td>The model of the phone</td>
+		</tr>
+		<tr>
+			<td>os</td>
+			<td>string</td>
+			<td>The operating system of the phone</td>
+		</tr>
+	</table>
+	
+	<h3>Example upload:</h2>
+	<div class="code"><p><code><pre>
+{
+	"brand": "Apple",
+	"screensize": 5,
+	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/440px-IPhone_X_vector.svg.png",
+	"model": "iPhone X",
+	"os": "IOS"
+}
+</pre></code></p></div>
+
+	<h3>Example response:</h3>
+	<p><code class="code">HTTP/1.1 200 OK</code></p>
+
+</section>
+
+
+<section id="delete">
+	<h2>Delete a phone</h2>
+	<p>Delete a phone from the server's database</p>
+	
+	<h3>HTTP request format:</h3>
+	<p>DELETE</p>
+	
+	<h3>Endpoint:</h2>
+	<p><code class="code">"DELETE http://localhost:8080/phones/{phone_id}"</code></p>
+	
+	<h3>Request parameters:</h3>
+	<p>Parameters for path</p>
+	<dl>
+		<dt>phone_id</dt>
+		<dd>This is the id of the phone the client wants to delete</dd>
+		<dd>This is given in the URL of the request</dd>
+	</dl>
+	
+	<h3>Response format:</h2>
+	<p>On success the HTTP status code in the response header is 200 OK, which
+translates to "success". The response body is empty. On error, the header status code can either be 400 or 500.
+A code of 400 means that the client did not upload correct information. A code of 500
+means something went wrong in the server.	</p>
+	
+
+	<h3>Example response:</h3>
+	<p><code class="code">HTTP/1.1 200 OK</code></p>
+
+</section>
+
+<section id="update">
+	<h2>Update phone</h2>
+	<p>Update a phone with new information in the server's database</p>
+	
+	<h3>HTTP request format:</h3>
+	<p>PUT</p>
+	
+	<h3>Endpoint:</h2>
+	<p><code class="code">"PUT http://localhost:8080/phones/{phone_id}"</code></p>
+	
+	<h3>Request parameters:</h2>
+	<dl>
+		<dt>phone_id</dt>
+		<dd>This is the id of the phone the client wants to delete</dd>
+		<dd>This is given in the URL of the request</dd>
+	</dl>
+	
+	<table>
+		<caption>List of objects</caption>
+		<tr>
+			<th>Key</th>
+			<th>Value Type</th>
+			<th>Value Description</th>
+		</tr>
+		<tr>
+			<td>brand</td>
+			<td>string</td>
+			<td>The brand of the phone</td>
+		</tr>
+		<tr>
+			<td>screensize</td>
+			<td>integer</td>
+			<td>The size of the screen in inches</td>
+		</tr>
+		<tr>
+			<td>image</td>
+			<td>URL</td>
+			<td>A URL containing an image of the phone</td>
+		</tr>
+		<tr>
+			<td>model</td>
+			<td>string</td>
+			<td>The model of the phone</td>
+		</tr>
+		<tr>
+			<td>os</td>
+			<td>string</td>
+			<td>The operating system of the phone</td>
+		</tr>
+	</table>
+	
+	<h3>Response format:</h2>
+	<p>On success the HTTP status code in the response header is 200 OK, which
+translates to "success". The response body is empty. On error, the header status code can either be 400 or 500.
+A code of 400 means that the client did not upload correct information. A code of 500
+means something went wrong in the server.	</p>
+	
+	
+	<h3>Example upload:</h2>
+	<div class="code"><p><code><pre>
+{
+	"brand": "Apple",
+	"screensize": 5,
+	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/440px-IPhone_X_vector.svg.png",
+	"model": "iPhone X",
+	"os": "IOS"
+}</pre></code></p></div>
+
+	<h3>Example response:</h3>
+	<p><code class="code">HTTP/1.1 200 OK</code></p>
+
+	
+	
+</section>
+
+<section id="retrieve">
+	<h2>Retrieve phone info</h2>
+	<p>Retrieve all the information about a specific phone from the server's database</p>
+	
+	<h3>HTTP request format:</h3>
+	<p>GET</p>
+	
+	<h3>Endpoint:</h2>
+	<p><code class="code">"GET http://localhost:8080/phones/{phone_id}"</code></p>
+	
+	<h3>Request parameters:</h3>
+	<dl>
+		<dt>phone_id</dt>
+		<dd>This is the id of the phone the client wants to delete</dd>
+		<dd>This is given in the URL of the request</dd>
+	</dl>
+	
+	<h3>Response format:</h2>
+	<p>The response holds the information about a specific phone determined by the given id.<br><br>
+	
+	On success the HTTP status code in the response header is 200 OK, which
+translates to "success". On error, the header status code is a 500 error code.	</p>
+	
+	<h3>Example response:</h2>
+	<div class="code"><p><code><pre>
+[
+    {
+        "brand": "Apple",
+        "screensize": 5,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/440px-IPhone_X_vector.svg.png",
+        "model": "iPhone X",
+        "os": "IOS",
+        "id": 1
+    }
+]
+</pre></code></p></div>
+
+	<h3>Retrieve phone objects:</h2>
+	<table>
+		<caption>List of objects</caption>
+		<tr>
+			<th>Key</th>
+			<th>Value Type</th>
+			<th>Value Description</th>
+		</tr>
+		<tr>
+			<td>brand</td>
+			<td>string</td>
+			<td>The brand of the phone</td>
+		</tr>
+		<tr>
+			<td>screensize</td>
+			<td>integer</td>
+			<td>The size of the screen in inches</td>
+		</tr>
+		<tr>
+			<td>image</td>
+			<td>URL</td>
+			<td>A URL containing an image of the phone</td>
+		</tr>
+		<tr>
+			<td>model</td>
+			<td>string</td>
+			<td>The model of the phone</td>
+		</tr>
+		<tr>
+			<td>os</td>
+			<td>string</td>
+			<td>The operating system of the phone</td>
+		</tr>
+		<tr>
+			<td>id</td>
+			<td>integer</td>
+			<td>The unique id of a specific phone</td>
+		</tr>
+	</table>
+</section>	
+
+
+
+<section id="reset">
+	<h2>Reset database</h2>
+	<p>Reset all the information from the database except for the default phones</p>
+	
+	<h3>HTTP request format:</h3>
+	<p>GET</p>
+	
+	<h3>Endpoint:</h2>
+	<p><code class="code">"GET http://localhost:8080/phones/reset"</code></p>
+	
+	<h3>Response format:</h2>
+	<p>On success the HTTP status code in the response header is 200 OK, which
+translates to "success". On error, the header status code is 500 SERVER ERROR.</p>
+	
+	<h3>Example response:</h3>
+	<p><code class="code">HTTP/1.1 200 OK</code></p>
+
+
+	
+</section>
+</body>
+</html>

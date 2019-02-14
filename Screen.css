@@ -1,0 +1,427 @@
+@media screen and (min-width: 320px){
+	/*renders the navbar in different screen sizes*/
+	@media screen and (min-width: 600px) {
+
+		#nav_bar {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		#nav_bar li {
+			margin: 0;
+			float: left;
+			border-right:1px solid #bbb;
+		}
+
+		#nav_bar li:last-child {
+			border-right: none;
+		}
+
+		#nav_bar li a{
+			display: block;
+			color: white;
+			font-size: 100%;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		#nav_bar li a:hover {
+			background-color: #111;
+		}
+
+		#nav_bar li a:active {
+			background-color: lightgray;
+		}
+	}	
+	
+	@media screen and (max-width: 600px) {
+
+		#nav_bar {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		#nav_bar li {
+			margin: 0;
+			float: left;
+			border-right:1px solid #bbb;
+		}
+
+		#nav_bar li:last-child {
+			border-right: none;
+		}
+
+		#nav_bar li a{
+			display: block;
+			color: white;
+			font-size: 60%;
+			text-align: center;
+			padding: 14px 10px;
+			text-decoration: none;
+		}
+
+		#nav_bar li a:hover {
+			background-color: #111;
+		}
+
+		#nav_bar li a:active {
+			background-color: lightgray;
+		}
+	}
+	
+	section {
+		padding-top: 1%;
+	}
+
+	p {
+		
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-right: 2%;
+		margin-left: 2%;
+		font-style: normal;
+		font-weight:normal;
+		font-variant: normal;
+	}
+
+	blockquote, pre, div {
+		text-align: center;
+	}
+
+
+
+	h1, h2, h3 {
+		font-size: 250%;
+		color: white;
+		background-color: #333;
+		width: 100%;
+	}
+
+	li {
+		margin: 2% 2% 2% 2%;
+		text-transform: capitalize;
+	}
+
+	body {
+		background-color: white;
+	}
+
+	#store_policy h1, #store_policy h2  {
+		border-spacing: 0px;
+		background-color: #333;
+		height: 80px;
+		font-size: 40px;
+	}
+
+	#store_policy p {
+		font: 100% arial, sans-serif;
+	}
+
+	img.thumbs_up {
+		vertical-align: middle;
+	}
+
+	#home {
+
+		padding-bottom: 25%; 
+		background-image: url(https://static.pexels.com/photos/249324/pexels-photo-249324.jpeg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+
+
+	#performance_table td{
+		border-collapse: separate;
+		border-spacing: 2px;
+		border: 1px solid black;
+		text-indent: 5%;
+	}
+
+	#performance_table {
+		width: 100%;
+		background-color: lightblue;
+		border-color: black;
+		border-style: solid;
+		border-spacing: 2px;
+		border-width: 1px;
+		
+	}
+
+	input:focus {
+		background-color: yellow;
+	}
+
+	.phone{
+		width: 13vmin;
+		height: 13vmin;
+		
+	}
+
+	a:link {
+		color: #0033cc;
+	}
+
+	a:visited {
+		color: #6600cc;
+	}
+
+	#phone_table, #phone_table tr, #phone_table td, #phone_table th {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+
+
+
+	#phonesInStock, #phonesInStock tr, #phonesInStock td, #phonesInStock th {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+
+	#phonesInStock {
+		caption-side: top;
+		font-family: "Arial Verdana", sans-serif;
+		text-align: center;
+		width: 90%;
+		margin: 2px 20px 10px 50px;
+	}
+
+	#phonesInStock tr th{
+		background-color: #2196f3;
+		font-size: 20px;
+		padding: 5px;
+	}
+
+	#phonesInStock tr td{
+		padding: 8px;
+		font-size: 20px;
+		height: 10%;
+	}
+
+
+	#phonesInStock tr:nth-child(even) {
+		background: #eceff1 none left;
+	}
+
+	#phonesInStock tr:nth-child(uneven) {
+		background: #fafafa none left;
+	}
+	th.headerSortDown { 
+		background-image: url(http://www.ppra.org.pk/images/buttons/Asc.gif); 
+		background-color: #3399FF;
+		background-repeat:no-repeat;
+		background-position: center right;
+	} 
+	th.headerSortUp { 
+		background-image: url(http://www.ppra.org.pk/images/buttons/Desc.gif); 
+		background-color: #3399FF; 
+		background-repeat:no-repeat;
+		background-position: center right;
+	} 
+	th.header {  
+		cursor: pointer; 
+	} 
+
+	#phonesInStock tr:hover{
+		background-color: #b0bec5;
+	}
+
+	#best_phones {
+		list-style: upper-roman inside;
+	}
+
+	#specslist {
+		list-style-position: inside;
+		list-style-image: url(https://www.rmdfw.com/shared/search/version-10/images/measle_purple-lrg-1.png);
+	}
+	
+	#formButton{
+		display: table;
+		margin: auto;
+		width: 12%;
+		background-color: #333;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		color: white;
+		border: none;
+		padding: 4px 0px
+	}
+	
+	/* Bonus part*/
+	
+	.note:before {
+		content:"Note: ";
+	}
+	
+	blockquote::first-line {
+		font-variant: small-caps;
+	}
+	
+	p {
+		text-indent: 30%;
+	}
+	h1 + p {
+		text-indent: 0px;
+	}
+	h2 + p {
+		text-indent: 0px;
+	}
+	
+	/* End bonus */
+	
+}
+
+@media screen and (max-width: 320px) and (max-height: 480px) {
+
+	#nav_bar {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	#nav_bar li {
+		margin: 0;
+		float: left;
+		border-right:1px solid #bbb;
+	}
+	
+
+	#nav_bar li:last-child {
+		border-right: none;
+	}
+
+	#nav_bar li a{
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 5px 8px;
+		font-size: 65%;
+		text-decoration: none;
+	}
+
+	#nav_bar li a:hover {
+		background-color: #111;
+	}
+
+	#nav_bar li a:active {
+		background-color: lightgray;
+	}
+
+	#home {
+		
+		margin-top: 10%;
+		padding-bottom: 4.5%; 
+		background-image: url(http://sunglowsolar.com/wp-content/uploads/2014/02/transparent-waves-9833.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	h1, h2, h3 {
+		font-size: 100%;
+		color: white;
+		background-color: #333;
+		width: 100%;
+	}
+
+	td,th,tr {
+		width: 100%;
+		border: 1px solid black;
+		border-collapse: collapse;
+		font-size: 100%;
+
+	}
+	
+	table td {
+		display: block;
+	}
+  
+	table th {
+		display: block;
+	}
+	
+	tr {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	#formButton {
+		display: table;
+		margin: auto;
+		width: 12%;
+		background-color: #333;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		color: white;
+		border: none;
+		padding: 4px 0px
+	}
+
+	#phonesInStock {
+		caption-side: top;
+		font-family: "Arial Verdana", sans-serif;
+		text-align: center;
+	}
+
+
+
+	#phonesInStock tr th{
+		background-color: #2196f3;
+	}
+
+
+
+	#phonesInStock tr:hover{
+		background-color: #b0bec5;
+	}
+
+
+	#performance_table td,#performance_table tr{
+		border-collapse: separate;
+		border: 1px solid black;
+		background-color: lightblue;
+	}
+
+	#performance_table {
+		width: 100%;
+		font-size: 100%;
+		border-color: black;
+		border-style: solid;
+		border-spacing: 2px;
+		border-width: 1px;
+		
+	}
+
+	img.thumbs_up {
+		vertical-align: middle;
+	}
+	.phone{
+		width: 50vmin;
+		height: 60vmin;
+		
+	}
+
+}
+	

@@ -1,0 +1,64 @@
+@media print {
+
+	nav {
+		display:none;
+	}
+
+	p {
+		orphans: initial;
+		widows: initial;
+	}
+
+	#PhoneTable {
+		border: 3px solid black;
+		border-collapse: collapse;
+	}
+
+	#phoneTable {
+		page-break-before: always;
+		page-break-after: always;
+	}	
+
+	table, td{
+		border-collapse: separate;
+		border-spacing: 2px;
+		border: 1px solid black;
+		text-indent: 5%;
+	}
+
+	#PhoneTable tr th{
+		background-color: #2196f3;
+		font-size: 2vmin;
+		padding: 5px;
+	}
+
+	#PhoneTable tr td{
+		padding: 8px;
+		font-size: 2vmin;
+		height: 10%;
+	}
+	#PerformanceTable {
+		width: 100%;
+	}
+		
+	.phone {
+		width: 13vmin;
+		height: 13vmin;
+		filter: grayscale(100%);
+	}
+
+	#phonesInStock tfoot {
+		display: none;
+	}
+	.add_phone {
+		display: none;
+	}
+	
+	#reset{
+		display: none !important;
+	}
+	
+	.thumbs_up {
+		display:none;
+	}
+}

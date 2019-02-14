@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+
+<html lang = "en">
+
+	<head>
+		<meta charset= "UTF-8">
+		<link rel="stylesheet" media="screen" href="Screen.css">
+		<link rel="stylesheet" media="print" href="Print.css">
+		<title>Quantuum smartphone shop</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.0.6/js/jquery.tablesorter.js"></script> 
+		<script src="Scripts.js"></script>
+	</head>
+
+<!--Compatibility report 
+We have compared our website between google chrome and mozilla firefox.
+in our experience, using different browsers does not affect the website's looks and feels, we believe that it is due 
+to the fact that html is standardized across all the web browsers.
+The difference comes in the printing, firefox doesnt seem to be optimized very well for printing web pages, in the preview page
+of firefox the borders of tables seem faded or non existent, even though in the web page the text size was the same. In the print preview
+the text size of the paragraphs on firefox was much bigger than on chrome, this resulted in the text taking much more room on the page. 
+
+one thing that worked differently in the browsers was the css widows property, this property only exists on chrome and opera browser
+therefore it had no affect in the firefox print preview.
+
+another construct that only exists in chrome, is the orphans property, which also since it does not exist for firefox did not have
+any affect in firefox.-->
+
+	<body>
+		<nav>
+			<ul id="nav_bar">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#phoneTable">Phones</a></li>
+				<li><a href="#specs">Specifications</a></li>
+				<li><a href="#performance">Performance</a></li>
+				<li><a href="#contact_us">Contact us</a></li>
+			</ul>
+		</nav>
+		<section id="home">
+			<h1>Home</h1>
+			<blockquote cite="https://www.ukessays.com/essays/information-technology/importance-of-smart-phones-in-daily-life-information-technology-essay.php">
+				Smart phones are getting really popular in this advanced world.
+				Everyone wants to carry his own personal data and information with him all the time which smart phone makes possible.
+				It is being accepted that in the future smart phones will take over all the other digital devices in next year's such as laptops,
+				personal desktop computers and notebooks. (www.ukessays.com)
+			</blockquote>
+			<p>
+				Our shop was created with one principle to have the <em>best prices on the market</em>, you can compare our prices
+				with <a href=http://www.ebay.com>ebay</a>.
+			</p>
+			<p>Dont forget our moto:</p>
+			<pre>
+				<code>
+					if (dont have phone)
+						Buy Quantuum!;
+					end
+				</code>
+			</pre>
+		</section>
+
+		<section id="store_policy">
+			<h1>Why you should buy from us</h1>
+			<p>
+				We provide the best quality products at the best rates, also our care package ensures that any defect will be replaced
+				immediately, you never have to worry about what happens if your phone stops working. our fast delivery option provides next day
+				delivery, <strong>you can have your phone tomorrow</strong>. <img class="thumbs_up" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/samsung/100/thumbs-up-sign_1f44d.png" alt="Thumbs up" width="50" height="50" />
+			</p>
+			<h2 id="QL">Our flagship phone</h2>
+			<p>
+				The <abbr title="Quantuum XXL">QL</abbr>
+				is our best phone to date with a screen size of 15" it has a lot of room to hold the best hardware several times!.
+				<br>
+				<br>
+				<q>Best phone to date!</q>- Forbes magazine.
+			</p>
+			<p>Join the hundreds of satisfied costumers that have already bought our phones.</p>
+		</section>
+
+		<section id="phoneTable">
+			<h1>Phones in stock</h1>
+			<form action="http://localhost:8080/phones" method="post" id="phoneForm">
+				<table id="phonesInStock" class="tablesorter">
+					<!--will be rendered by Javascript-->
+				</table>
+					<input class="add_phone" type="submit" value="Submit" id="formButton">
+					<input type='submit' value='Delete' name='Delete' id="formButton">
+					<input type='submit' value='Update' name='Update' id="formButton">
+					<input type='submit' value='Reset' name='Reset' id="formButton">
+			</form>
+
+		</section>
+
+		<section id="performance">
+			<h1>Performance</h1>
+			<table id="performance_table" class="tablesorter">
+				<caption>Performance of phones</caption>
+				<thead>
+					<tr>
+						<th>Model</th>
+						<th>Processing</th>
+						<th>Display</th>
+						<th>Camera</th>
+						<th>Audio output</th>
+						<th>Battery</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>iPhone 5SE</td>
+						<td>High</td>
+						<td>1136 x 640</td>
+						<td>12 megapixels</td>
+						<td>Average</td>
+						<td>7 hours</td>
+					</tr>
+					<tr>
+						<td>HTC 10</td>
+						<td>High</td>
+						<td>1440 x 2560</td>
+						<td>12 megapixels</td>
+						<td>High</td>
+						<td>7 hours</td>
+					</tr>
+					<tr>
+						<td>Sony Xperia X</td>
+						<td>Average</td>
+						<td>1080 x 1920</td>
+						<td>23 megapixels</td>
+						<td>Low</td>
+						<td>6 hours</td>
+					</tr>
+					<tr>
+						<td>Quantuum XXL</td>
+						<td>Extremely high</td>
+						<td>3840 × 2160</td>
+						<td>40 megapixels</td>
+						<td>Extremely high</td>
+						<td>24 hours</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h2>Best phones in order</h2>
+			<ol id="best_phones">
+				<li><abbr title="Quantuum XXL">QL</abbr></li>
+				<li>HTC 10</li>
+				<li>iPhone 5SE</li>
+				<li>Sony Xperia X</li>
+			</ol>
+		</section>
+
+		<section id ="specs">
+			<h2><abbr title="Quantuum XXL">QL</abbr> Specification:</h2>
+			<ul id="specslist">
+				<li>Size: 15 inches</li>
+				<li>Display: 4k resolution</li>
+				<li>video: 4k video resolution</li>
+				<li>Camera: 40 megapixel camera</li>
+				<li>Processor: 4 Snapdragon 660</li>
+				<li>Battery: 5000 mAh</li>
+				<li>Platform: Quantuum OS</li>
+				<li>Loudspeaker: Yes, with stereo</li>
+			</ul>
+		</section>
+
+		<section id="contact_us">
+			<h1>Contact us</h1>
+				<dl>
+					<dt>Email:</dt>
+					<dd>Quantuum@service.com</dd>
+					<dt>Phone:</dt>
+					<dd>+3166554332</dd>
+				</dl>
+			<p class="note">the information on this website is fictional, do not take it seriously.</p> 
+		</section>
+	</body>
+</html>

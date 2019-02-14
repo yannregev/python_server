@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset= "UTF-8">
+<title>Lab Questions</title>
+<meta name="author" content="Aron Heijstek and Yann Regev">
+<style>
+       #map {
+        height: 200px;
+        width: 300px;
+       }
+</style>
+</head>
+<h1>Lab 1</h1>
+<ol>
+	<li><p>The main differences lie more on the periphery than on the core concepts. Some of these differences are<p>
+<ul>
+	<li>The W3C attempts to ease patent-infringement worries.</li>
+	<li>One involves a “ping” feature that could help publishers track clicks on links without resorting to indirections that take visitors to an intermediate page just for tracking.</li>
+<li>Source: <a href="https://www.cnet.com/news/growing-pains-afflict-html5-standardization">https://www.cnet.com/news/growing-pains-afflict-html5-standardization/</a>, Stephen Shankland, 2010) </li>
+</ul>
+	<li><dl>
+	<dt>The internet:</dt>
+<dd><pre>The Internet is a massive network of networks, a networking infrastructure. It connects millions of computers together globally, 
+forming a network in which any computer can communicate with any other computer as long as they are both connected to the Internet. 
+Information that travels over the Internet does so via a variety of languages known as protocols. </pre></dd>
+
+<dt>World Wide Web:</dt>
+<dd><pre>The World Wide Web, or simply Web, is a way of accessing information over the medium of the Internet. It is an information-sharing model that is 
+built on top of the Internet. The Web uses the HTTP protocol, only one of the languages spoken over the Internet, to transmit data. 
+Web services, which use HTTP to allow applications to communicate in order to exchange business logic, use the the Web to share information. 
+The Web also utilizes browsers, such as Internet Explorer or Firefox, to access Web documents called Web pages that are linked to each other via hyperlinks. 
+Web documents also contain graphics, sounds, text and video.</pre><dd>
+</dl></li>
+	<li><blockquote cite="w3.org/people/berners-lee"><pre>“A graduate of Oxford University, Sir Tim invented the Web while at CERN, the European Particle Physics Laboratory, in 1989. 
+He wrote the first web client and server in 1990. His specifications of URIs, HTTP and HTML were refined as Web technology spread.” </pre></blockquote>
+(<a href="w3.org/people/berners-lee">w3.org/people/berners-lee</a>, 2017)
+So, these three essential technologies are HTTP, URIs and HTML.</li>
+	<li><pre>The code created from the word document added a lot of unnecessary information which made the code harder to understand. 
+The code created by the plain text editor is holds only the necessary parts. The plain text editor is therefore better to use if you want to create an understandable source code. </pre></li>
+	<li>
+<dl>
+<dt>HTTP (Port 80): </dt>
+<dd><pre>It is a generic stateless object-oriented protocol. (w3.org)
+The w3c organization holds all the latest information of the HTTP protocol and they hold authority, because this organization defines the standards.</pre></dd>
+
+<dt>SSH (Port 22): </dt>
+<dd><pre>It is a method for secure login from one computer to another. (ssh.com)
+This source holds the authority, because this is the official website of the company who developed the protocol.</pre></dd>
+
+<dt>FTP (Port 20): </dt>
+<dd><pre>The main objective of the ftp is to promote the sharing of files in a reliable and efficient way. (w3.org)
+The w3c organization holds all the latest information of the FTP protocol and they hold authority, because this organization defines the standards. </pre></dd>
+</dl>
+
+
+<table>
+<caption>Protocol table</caption>
+	<tr>
+		<th>Name</th>
+		<th>Port number</th>
+		<th>Description</th>
+		<th>Authoritative source</th>
+	</tr>
+	<tr>
+		<td>HTTP</td>
+		<td>80</td>
+		<td>It is a generic stateless object-oriented protocol</td>
+		<td><a href="https://www.w3.org/Protocols/HTTP/HTTP2.html">w3.org</a> The w3c organization holds all the latest information of the HTTP protocol and they hold authority, 
+because this organization defines the standards.</td>
+	</tr>
+	<tr>
+		<td>SSH</td>
+		<td>22</td>
+		<td>It is a method for secure login from one computer to another</td>
+		<td><a href="https://www.ssh.com/ssh/protocol">ssh.com</a> This source holds the authority, because this is the official website of the company who developed the protocol </td>
+	</tr>
+	<tr>
+		<td>FTP</td>
+		<td>20</td>
+		<td>The main objective of the ftp is to promote the sharing of files in a reliable and efficient way</td>
+		<td><a href="https://www.w3.org/Protocols/rfc959/1_Introduction.html">w3.org</a> The w3c organization holds all the latest information of the FTP protocol and they hold authority, 
+because this organization defines the standards </td>
+	</tr>
+
+
+</table> 
+</li>
+	<li><pre>The tags in html give a meaning to the text. &#60;b&#62; only makes the text bold, but it does not give extra meaning. The &#60;strong&#62; tag gives the text the meaning of “important”. 
+This is why the latter is preferred of the text is considered important.
+The same concept goes for the &#60;i&#62; and &#60;em&#62; tags. &#60;i&#62; only makes text italic, while &#60;em&#62; give the text a meaning of “emphasized”. </pre></li>
+	<li><pre>Both span and div are used to group elements. However, div is used for block-elements and span is used for inline-elements. </pre></li>
+	<li><pre>CSS is often used for style markup over HTML, one of the reasons for this is that with CSS you can distinguish between different devices with different screen resolutions and sizes. 
+	This makes it more compatible for use with mobile phones and other devices next to the main computer. 
+Also, CSS can organize and makeup multiple HTML files, this would not be possible if the style markup is fully implemented in one HTML file.
+Another reason, is that a CSS file saves a lot of work, because it is saved in an external CSS file with an external style sheet, you can change an entire website by changing just one file. </pre></li>
+	<li><pre>Since the style of both tags is the same, the text will not change for the word that is “emphasized”. The &#60;em&#62; tags are important for the author but not for the user of the website.
+When trying this, we found that this is indeed the case </pre></li>
+	<li><pre>Firefox is an open-source, so everybody can add to the development of the browser. However, Internet Explorer belongs to Microsoft and therefore only they are responsible for the development.
+Also, Internet Explorer had a lot of security flaws and is therefore not reliable. Since Mozilla is a community created web browser. Everybody can help develop a more secure environment. </pre></li>
+
+</ol>
+<h2>Lab 2</h2>
+<ol>
+	<li><pre>The problem that Schmetzke found, that most the most prevalent error is not having ALT texts to images
+	corresponds with guideline #1 of the WCAG: Provide equivalent alternatives to auditory and visual content.</pre></li> 
+	
+	<li><pre>We checked with the website: <a href="https//www.apple.com">"https//www.apple.com"</a>.
+The tool mentioned that there are 2 errors and an alert. This is a site that is very widely used and should therefore
+be very accessible. But even this site has some small errors, which shows that even the most famous and often used sites can still have accessibility problems.</pre></li>
+
+	<li><pre> The three colors that we tested we're black and white(high contrast), gray and green(medium contrast), and black and black(no contrast).
+	with the first colors that we used the difference in color was very big, it was like looking and a piece of paper, the colors were very easy to distinguish
+and therefore were very easy to read.
+in the second combination the colors were a bit more similar, for people with good eyesight the colors should not impose a big
+challenge to distinguish and should be relatively easy to read, but for people with impaired vision(e.g color blind) this will cause a problem since it is not
+as natural as reading with 100% contrast.
+the third combination was impossible to read for anyone since there was no contrast at all between the background and the text.
+in summary when building a website you should choose colors that have high contrast in order for the user to haave an easy reading
+experience in your website.</pre></li>
+
+	<li><pre>An advantage of making a responsive web app, is that it take way less time than creating a whole separate mobile
+application. This is because one web app works on multiple browsers. But a mobile application needs to be made separately for multiple operating systems. 
+This therefore also saves money and that makes it very appealing.
+However, an advantage of making a mobile application, is that it does not require an internet connection to operate. Sure, sometimes you do need internet
+to access certain information, but an app can still work fine even if there is no internet connection available.	</pre></li> <!-- Question 4 -->
+
+	<li><pre>What the W3C is addressing within the Internationalization activity is that the Internet should for everyone, no matter where you live,
+what disabilities you have, or any other restriction you have.the goal of this group is to <q>Develop education and outreach materials
+to make the internationalization aspects of W3C technology better understood and more widely and consistently used by content authors and implementers.</q>
+in other words, the group wants to help developers create content that can support any text, numerical systems, etc. from all over the world.
+one key issue is that every new technology has to support all the languages in the world before it can be used.</pre></li> <!-- Question 5 -->
+	
+	<li><pre>IP of http://www.few.vu.nl is: 130.37.164.154
+IP of http://www.cs.vu.nl is: 130.37.164.154
+We found these IP addresses by using third party websites that track the IP of the url you enter. Multiple of these websites gave the same result
+and therefore we assumed that the information is valid.
+
+The websites use the same IP address, this means that they use the same web server. This makes it that the server can share its resources, without
+having to use the same host name for all services.  </pre></li>
+	<li><pre>The Benefits of IPv6
+
+While increasing the pool of addresses is one of the most often-talked about benefit of IPv6, there are other important technological changes in IPv6 that will improve the IP protocol:
+
+    No more NAT (Network Address Translation)
+    Auto-configuration
+    No more private address collisions
+    Better multicast routing
+    Simpler header format
+    Simplified, more efficient routing
+    True quality of service (QoS), also called "flow labeling"
+    Built-in authentication and privacy support
+    Flexible options and extensions
+    Easier administration (say good-bye to DHCP)
+	
+An IP address is binary numbers but can be stored as text for human readers.  For example, a 32-bit numeric address (IPv4) is written in decimal as four numbers separated by periods. Each number can be zero to 255. For example, 1.160.10.240 could be an IP address.
+IPv6 addresses are 128-bit IP address written in hexadecimal and separated by colons. An example IPv6 address could be written like this: 3ffe:1900:4545:3:200:f8ff:fe21:67cf.
+<a href="https://www.webopedia.com/DidYouKnow/Internet/ipv6_ipv4_difference.html">(source)</a>
+</pre></li>
+	<li><pre>Multipurpose Internet Mail Extensions (MIME) type, is used to identify types of pages based on their format and nature.
+Of of the purposes is that the browser can identify what plugin should be used when opening a page.
+
+The most common subtypes of type text are:
+html, plain and richtext
+
+The most complete list from the authoritative source can be found at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml#text">this url</a>.
+This is the website of the IANA, these are responsible for keeping track of all the offical MIME types
+(<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">developer.mozilla.org</a>, 2017)	</pre></li> <!-- Question 8 -->
+	<li><pre>The other method that we have found is the POST method.
+The differnces between the two:
+GET:
+    GET requests can be cached
+    GET requests remain in the browser history
+    GET requests can be bookmarked
+    GET requests should never be used when dealing with sensitive data
+    GET requests have length restrictions
+    GET requests should be used only to retrieve data
+POST:
+    POST requests are never cached
+    POST requests do not remain in the browser history
+    POST requests cannot be bookmarked
+    POST requests have no restrictions on data length
+	
+Source:<a href="https://www.w3schools.com/tags/ref_httpmethods.asp">w3schools</a> is the biggest online school for HTML. and is filled with information about web technologies.
+</pre></li> <!-- Question 9 -->
+	<li><pre>5c9fb373</pre></li> <!-- Question 10 -->
+
+</ol>
+
+<h2>Lab 3</h2>
+<ol>
+<li><p>Using firefox browser, javascript console is enabled by default, to open the console the combination ctrl+shift+i is used.</p></li>
+<li><pre><code>&#60;script&#62;
+	document.getElementsByTagName("body").style.backgroundColor = "red";
+	document.body.style.backgroundColor = "red";
+&#60;/script&#62;</code></pre>
+
+<code>&#60;a href="https//:www.google.com" onclick="return false"&#62;Google&#60;/a&#62;</code>
+</li>
+<li><p>When using JQuery to change a behavior of 'a' element a function needs to be implemented that specifies what
+happens when 'a' is clicked. the good thing about using JQuery is that it gives more flexibility, you can add
+a lot of functionality in each click. the bad is that you must first add JQuery to the website and, it is much more complicated to implement it, it has to be
+add by a programmer and is not as straight forward as with javascript and DOM.</p></li>
+
+<li>Differences:<ul>
+	<li>Javascript is an interpreted language, so there is no compile step</li>
+	<li>There are no special Javascript applications, the interpreter is always embedded</li>
+	<li>Scripts operate on the browser or current documents</li>
+</ul>
+Similarities:<ul>
+	<li>The syntax of the languages is very similar</li>
+	<li>Both Python and Javascript are object-based</li>
+</ul></li>
+
+<li><pre>Ajax = Asynchronous JavaScript And XML.
+Asynchronous means the web page can be updated asynchronously by exchanging data with a web server
+behind the scenes. This means that it is possible to update parts of the web page, without reloading the whole page.</pre></li><!--Question 2-->
+
+<li><pre>Host objects are used by Javascript to get information from the browser.
+These objects most often come from the browser. Two often used Host objects are: window and document
+Python and Java do not have these host objects, because both of them do not
+require a host environment.</pre></li>
+
+<li><pre>The 'Math' object: contains math function and constant numbers used for calculations.
+The Date object: used ti represent arbitrary dates and times, to get the current system date, and to calculate differences between dates.</pre></li>
+
+<li><pre>Host objects are used by Javascript to get information from the browser.
+These objects most often come from the browser. Two often used Host objects are: window and document
+Python and Java do not have these host objects, because both of them do not
+require a host environment.</pre></li>
+
+<li><pre>The auto-complete feature in google API lets you put one input box on your page where a user enters a place
+of interest he would like to find on the map. the auto-complete will try to match their request from google maps data
+base which holds tens of millions of places around the world. </pre></li>
+
+<li><h4>Interactive map with location of shop</h4>
+<!--This code was found on the following website: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 52.378693, lng: 4.632962};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHRZrCUpck-hp66qJyfLmsW0y_j_bnTD4&callback=initMap">
+    </script><!--Question 10-->
+	</li>
+</ol>
+
+<h2>Lab 4</h2>
+<h3>Question 1</h3>
+<ol>
+<li><p>The tokenizer did a very good job at finding the amount of times a word is repeated(not surprising since its a computer).
+but it is doing one thing wrong, when an apostrophe appears in a word the tokinizer considers it as two separate words.</p></li>
+<li><p>not all the words in the top 30 are actually words, some of them are suffixes after an apostrophe which are treated as another word.</p></li>
+<li><p>According to Zipf's law the most common word will appear twice as often as the second most common world, three times as often
+as the third most frequent and so forth, This will give an exponential decay graph of the words being used. this is not the case in this book.
+this book graph is approximately linear.</p></li>
+<li><p>According to heaps law, the more text gathered together the number of new words used in the is getting smaller as a logarithmic function.
+this applies to this book as the graph given by the heaps function is a logarithmic graph.</p></li>
+</ol>
+
+<h3>Question 2</h3>
+<ol>
+	<li><pre>The quality of a TF-based search completely relies on the amount of times that a
+specific word occurs in a text. Therefore, the precision and recall are both not useful.
+This is because of the fact that the term frequency in a certain chapter does not have to meaning
+that the chapter is also actually relevant.</pre></li> <!--a-->
+	<li><p>When you are creating a TDIDF matrix, the program needs to calculate the value using two other values. These <br>
+	values are: the IDF values and the frequency of occurrence values. The calculation takes time and because it needs to <br>
+	calculate the result for every word, it takes longer than creating a normal TF matrix.</p></li> <!--b-->
+	<li><pre>The first main difference is of course the way the results are given. While in a TF-based
+search, the frequency is given, which can be quite a high number. In the TDIDF-based search, often a much
+smaller number is given, because this is calculated using the IDF value of the word.
+The TDIDF-based search gives us a better precision and recall, because the value actually says something about
+how relevant the chapters are to the word given. Therefore, searching with a TDIDF-based search is better.</pre></li> <!--c-->
+	<li><pre>The precision at k would be perfect if the first 5 results would all have a value higher than 0.
+If this is not the case, then the precision at k is much lower because it gave a result that is not relevant.</pre></li> <!--d-->
+	<li><pre>If the tokenizer would not cut words in two, whenever a apostrophe appears, we would get a clearer idea
+of which words are actually more frequent, because the words that we are working with are more complete.
+Therefore, the recall will be higher in a search, because the database of words is more complete. The precision will
+be unaffected.</pre></li> <!--e-->
+</ol>
+
+<h2>Lab 5</h2>
+<ol>
+	<li>
+		<ol>
+			<li>
+				For an operation to be idempotent, the server needs to have the abillity to keep track of the
+				status information of the client, which means, clients can make the same call repeatedly while
+				producing the same result.
+			</li>
+			<li>
+				HTTP proxy caching is a way for the proxy server to store copies of web objects that are frequently accessed,
+				by doing that the server can serve the client the objects faster without the need to to access the server
+				for each request. since no matter how many calls the client made the response will be the same it is easy
+				to cache the result.
+			</li>
+			<li>
+				Visitors use proxy servers to access the Internet and have the same IP address, visitor counters cannot see
+				that the server has been accessed by someone else since it is the same address.
+			<li>
+				visitor counters sometimes can cause problems when being cached.
+			</li>
+			</li>
+		</ol>
+	</li>
+	<li>
+		A stateless protocol is a protocol in which no information is retained by either sender or receiver.
+		one advantage of the protocol is that each message can be understood in independently from other messages.
+		one disadvantage is that it may be necessary to include additional information in every request, and 
+		extra information will need to be interpreted by the server.
+	</li>
+	<li>
+		Since computers can have the same IP address saving the shopping cart on the server can cause a problem,
+		the server might confuse between users, therefore the best solution is to save this data on the clients computer.
+		Cookies were introduced in mosaic Netscape, the developers did not want its servers to have to retain
+		partial transaction states, which led them to ask Netscape to find a way to store that state in each
+		user's computer instead. Cookies provided a solution to the problem of reliably implementing a virtual
+		shopping cart.
+	</li>
+	<li>
+<table border="solid">
+	<tr>
+		<th>Endpoint</th>
+		<th>HTTP method</th>
+		<th>Reponse Format</th>
+		<th>Response codes</th>
+
+	</tr>
+	<tr>
+		<td><pre>GET https://api.spotify.com/v1/albums/{id}
+Parameters: Authorization, id, market</pre></td>
+		<td>GET</td>
+		<td>JSON</td>
+		<td>
+			<pre>200: OK - The request has succeeded.
+403: Forbidden - This can happen whenever a user does not have access
+503: Service Unavailable - The server is down or unavailable for use</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><pre>GET https://api.twitter.com/1.1/trends/place.json?id=1
+			Parameters: id, exclude</pre></td>
+		<td>GET</td>
+		<td>JSON</td>
+		<td>
+			<pre>200: OK - The request has succeeded.
+				403: Forbidden - This can happen whenever a user does not have access
+				503: Service Unavailable - The server is down or unavailable for use</pre>
+		</td>
+	</tr>
+</table>
+	</li>
+	<li>
+		According to the response the other HTTP requests methods that are allowed are GET, POST, PUT, and DELETE.
+		the server allows all origins to make these requests.
+	</li>
+	<li>
+		The content-type that we have received from the server was 'application-json'.
+		since in the previous assignments we have received and used the content of this request we were expecting to receive
+		json content.
+	</li>
+	<li>
+		After each time we save the new content to the python file we can see in the powershell console that the Bottle server
+		is starting  up again.
+		if a syntax error exist in the code, when saving the new code a message will appear in the powershell console indicate
+		that there is a syntax error and where it is in the code.
+		
+	</li>
+	<li>
+		Advantage of using a template:
+		The template automatically creates the table so you would not need any extra difficult code on the html or javascript file.
+
+		Advantage of using a JSON format:
+		However, if the data is given in a JSON format, you can use the information in different ways and in multiple places.
+		Which can save time when making a big application or website.
+	</li>
+</ol>
+
+
+<h2>Lab 6</h2>
+<ol>
+	<li>The social analysis of Web science must also deal with the negative aspects of Web-based social interaction
+	(such as security breaches, identity theft, privacy violations, and the social disruptions of globalization).
+	The Web produces such dangers because it provides opportunities for those who break laws, spread hate,
+	or promote terrorism. These are troubling aspects of the Internet, so a responsible research agenda must
+	include their study. we agree with the view that this topic should be seen as part of Web Science because web scientists
+	have the knowledge to deal with these problems and fix them. other scientists do not know how to deal with the web
+	as well as web scientists.</li> <!--Question 1 -->
+	<li>The term long tail refers to the content online that is less searched for. The content in the long tail is
+less popular. However, it is still good for companies to have a long tail because a wide selection is good for customers.
+Whenever a customer is looking for something specific, it is beneficial for a company to be able to still provide useful information
+or products.</li> <!--Question 2 -->
+	<li>
+		<ol type="a";>
+		<li>Net neutrality is the concept of a free web. This basically means that all data traffic is treated equally.
+This means that there is no discrimination against any form of data traffic. And anyone has the same rights and way of accessing.</li>
+		<li>We agree with Sir Tim on this subject. This is because we believe that the internet and the Web are things that should
+be available for anyone for the no cost. The internet should not be a commercial concept, but it should be a community driven one.
+If the internet will start costing money, only big companies can get fast internet. We think this is not fair, and therefore
+we fully disagree with the plan of the FCC. </li>
+		<li>A lot of web services and websites are hosted and created in the USA. Whenever Net Neutrality disappears, some of the
+smaller web services will not be able to get a fast connection anymore. This would mean that European users will also not be
+able to use these services in an efficient way. Only the very big services will be able to pay for fast connection. So these
+services will not change.</li>
+		</ol></li> <!--Question 3 -->
+	<li>data.gov is a prime example of a more transparent government system. By making this research data available, we know
+more about the government. However, a lot of data is being published about a lot of people. This data is available for anyone
+and therefore, there is a big privacy issue at hand if any data is too personal.</li> <!--Question 4 -->
+	<li>Bad search is the not a problem anymore in our day and age. Almost all search engines have an autocorrect and a suggestion bar.
+This makes searching the web very easy.
+Not changing the color of visited links is also an issue that has been resolved. Pretty much every website that you visit has the
+functionality that visited links become a different, often a bit darker, color.
+Not answering user's questions is also an issue that is resolved. Most sites either have a form to ask questions or they have a
+FAQ section that gives them the ability to look for their answer without having to fill in a form.
+
+A problem that we still have today, is that a lot of websites are still not responsive. Responsive web design is very important when
+people are working with machines of different sizes, like laptops, mobile phones and monitors. Although the most popular sites do
+have this functionality, most small services don't offer the ability to fully resize the page without breaking the design.</li> <!--Question 5 -->
+	<li>When looking at the webpage of our university: vu.nl. You are immediately confronted with a lot of information. In a B
+version of the web site, we would remove the information box in the bottom right. This box holds a lot of unnecessary information
+if you are not specifically looking for this.
+
+To see if this site would work better, you can test how long it takes for the user to click a link and direct to the part of the 
+website that they are interested in. The independent variable here is the existence of the text box. The dependent variable would be
+the time spent on the page before directing to a different part of the website.
+
+Our hypothesis:
+When removing the text box with unnecessary information, people will spent less time searching for the link that they want to direct to.
+Therefore the use of the web page will be more efficient.</li> <!--Question 6 -->
+	<li>
+		<form>
+			How do you rate the design of this website? <br>
+			<input type="range" name="rating" min="0" max="10"><br><br>
+			Was the information on this website useful?<br>
+			Yes<input type="radio" name="useful" value="yes"><br>
+			No<input type="radio" name="useful" value="no"><br><br>
+			Do you have a suggestion for us so we can improve our website?<br>
+			<input type="text" name="suggestion" style="width: 30%;"><br>
+			<input type="submit" name="submit">
+		</form>
+The range question is to see in what degree the user thinks something. With a scale you can clearly see how much a user agrees with something for instance.
+The Yes/No question is to clearly be able to see if a user does or does not like something.
+The text question is to ask the user for a certain detailed opinion, which the creator of the website can look at to make specific changes.
+This survey would work for any website, but we used the following <a href="https://www.vu.nl">site</a>.
+	</li> <!--Question 7 -->
+	<li>The common log format can help with seeing what actions people perform on a website. This information can be used to make changes
+to see if they effect the user's actions. If a change in the website changes the user's actions positively, then the website can change it's format.
+
+Whenever a link is visited on a web page, the log format can document this and then see if the user goes back to the main page after clicking on the link.
+This could for instance mean that the information the user was looking for was not in the place behind the link. Therefore, the name of the link
+might have been misleading.
+
+The independent variable in such a research would be the name of the link. The dependent variable would be the fact if the user returns
+to the page after clicking on the link.
+
+Our hypothesis:
+When the link has a specific name, the user will find the information they are looking for and they will not return to the main page. </li> <!--Question 8 -->
+	<li>The first appearance of google in the wayback machine is on 11 november 1998, at that time google did not have any styling.
+	there were only two buttons on the site, a search prototype and a might-work prototype, it did not even include a text field on
+	the front page.
+	second appearance is on 2 december 1998, by that time google added some styling and color to the site and also the familiar google
+	logo, also, now there is a text field on the main page and search buttons.
+	In 17 january 1999 google also added a subscription field for a user to get updates about google.
+	by the end 1999 google removed the special search and help sections and the site began to look a lot more like the modern day's site.
+	in may 11 2000 google added a bar for language where you can choose the search language.
+	by the end of 2001 the site became more popular probably because more people had access to the Internet, google added
+	the option to search for images, groups, and directories.
+	by the end of 2006 google also added a button to login to gmail.
+	The website stayed the same with only minor changes for years after, but the website slowly gained popularity until it reached the status
+	of being the number 1 used search engine that it is today.</li> <!--Question 9 -->
+</ol>
+
+<h2>Bonus lab 3</h2>
+<p>The like button and the open graph protocol are part of the Facebook sdk, website developers can
+add a Facebook like button to their page. When the like button is clicked an object is created on the
+wall of the user, the object will retrieve special meta tags from the website that the website
+developer has added to his head section, those meta tags include an image, a title, a description etc.
+and will display them inside the object created on the Facebook page of the user. </p>
+
+<p>Pros:</p>
+<ul>
+<li>Could enable behavioral targeting for better customer acquisition campaigns, There will be more
+data available on consumer online behavior. Although Facebook will hold the keys to this data.</li>
+
+<li>Could help campaigns to go viral and simplify brand advocacy: The interplay of Facebook users
+’News feed and their activity on the websites with Facebook plug-ins could enhance marketers’
+advocacy initiatives by enabling easier and more frequent posting to Facebook. In this way,
+Open Graph can give an incremental lift to current marketing programs.</li>
+</ul>
+
+<p>Cons:</p>
+<ul>
+<li>Reduced user trust: Users may feel that their every interaction is being monitored and adjust
+their privacy settings as needed.  Already, lawmakers like New York’s Senator Chuck Schumer have
+expressed their concerns.</li>
+
+<li>Too much information: Consumers may become overloaded by too much information on their news feeds,
+making the Facebook experience less relevant and causing many users to shut down their accounts.</li>
+
+<li>Too much Data to Facebook: Open Graph could give Facebook massive power as the aggregator of consumer
+preferences; we’ll have to wait and see how Facebook works with advertisers to share that information</li>
+</ul>
+
+
+</html>
